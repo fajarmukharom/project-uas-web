@@ -35,13 +35,14 @@
     <div class="splash-container">
         <div class="card ">
             <div class="card-header text-center"><img class="logo-img" src="../assets/images/logo.png" alt="logo"><span class="splash-description">Masukkan username & password anda</span></div>
+           
             <div class="card-body">
-                <form>
+                <form method="post" action="includes/action/conn-login.php">
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Email/Username" autocomplete="off">
+                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Username" name="username_admin" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="password" type="password" placeholder="Password">
+                        <input class="form-control form-control-lg" id="password" type="password" name="password_admin" placeholder="Password">
                     </div>
                     <div class="form-group">
                         <label class="custom-control custom-checkbox">
